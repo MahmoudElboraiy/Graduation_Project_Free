@@ -906,11 +906,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\elboraiy\\c# trainning\\ProjectSetup\\IdentityManagerAPI\\Models\\Models.csproj",
+      "projectUniqueName": "C:\\Users\\mahmo\\Source\\Repos\\Graduation_Project_Free\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\elboraiy\\c# trainning\\ProjectSetup\\IdentityManagerAPI\\Models\\Models.csproj",
+      "projectPath": "C:\\Users\\mahmo\\Source\\Repos\\Graduation_Project_Free\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\mahmo\\.nuget\\packages\\",
-      "outputPath": "C:\\elboraiy\\c# trainning\\ProjectSetup\\IdentityManagerAPI\\Models\\obj\\",
+      "outputPath": "C:\\Users\\mahmo\\Source\\Repos\\Graduation_Project_Free\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

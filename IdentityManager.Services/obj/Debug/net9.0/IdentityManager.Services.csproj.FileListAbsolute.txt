@@ -16,3 +16,21 @@ C:\elboraiy\c# trainning\ProjectSetup\IdentityManagerAPI\IdentityManager.Service
 C:\elboraiy\c# trainning\ProjectSetup\IdentityManagerAPI\IdentityManager.Services\obj\Debug\net9.0\refint\IdentityManager.Services.dll
 C:\elboraiy\c# trainning\ProjectSetup\IdentityManagerAPI\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.pdb
 C:\elboraiy\c# trainning\ProjectSetup\IdentityManagerAPI\IdentityManager.Services\obj\Debug\net9.0\ref\IdentityManager.Services.dll
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\IdentityManager.Services.deps.json
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\IdentityManager.Services.dll
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\IdentityManager.Services.pdb
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\DataAcess.dll
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\Models.dll
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\DataAcess.pdb
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\Models.pdb
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.csproj.AssemblyReference.cache
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.AssemblyInfoInputs.cache
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.AssemblyInfo.cs
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.csproj.CoreCompileInputs.cache
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.sourcelink.json
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\Identity.1858300D.Up2Date
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.dll
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\refint\IdentityManager.Services.dll
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.pdb
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\ref\IdentityManager.Services.dll

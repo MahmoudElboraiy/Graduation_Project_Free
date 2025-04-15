@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LBZV07fEzLk=",
+  "dgSpecHash": "p6XaF4HwG6M=",
   "success": true,
-  "projectFilePath": "C:\\elboraiy\\c# trainning\\ProjectSetup\\IdentityManagerAPI\\IdentityManagerAPI\\IdentityManagerAPI.csproj",
+  "projectFilePath": "C:\\Users\\mahmo\\Source\\Repos\\Graduation_Project_Free\\IdentityManagerAPI\\IdentityManagerAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mahmo\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
