@@ -15,7 +15,6 @@ using Microsoft.Extensions.FileProviders;
 using IdentityManagerAPI.Middlewares;
 using IdentityManager.Services.ControllerService.IControllerService;
 using IdentityManager.Services.ControllerService;
-using DataAcess.ExternalDb;
 
 var builder = WebApplication.CreateBuilder(args);
 

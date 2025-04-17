@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using DataAcess;
-using DataAcess.ExternalDb;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
