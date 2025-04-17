@@ -33,6 +33,16 @@
   },
   {
     "ContainingType": "IdentityManagerAPI.Controllers.FoodController",
+    "Method": "getALL",
+    "RelativePath": "api/Food",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IdentityManagerAPI.Controllers.FoodController",
     "Method": "PostSearchByIngredientId",
     "RelativePath": "api/Food",
     "HttpMethod": "POST",

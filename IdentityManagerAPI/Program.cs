@@ -28,8 +28,8 @@ builder.Services.AddHttpContextAccessor();
 // Add database context
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddDbContext<ConvertExcelDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ExternalConnection")));
+//builder.Services.AddDbContext<ConvertExcelDbContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("ExternalConnection")));
 
 // Configure Identity
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()

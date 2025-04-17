@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using DataAcess;
 using DataAcess.ExternalDb;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,12 +14,19 @@ namespace IdentityManagerAPI.Controllers
     [ApiController]
     public class FoodController : ControllerBase
     {
-        private readonly ConvertExcelDbContext _db;
+        //private readonly ConvertExcelDbContext _db;
+        private readonly ApplicationDbContext _db;
         private readonly IMapper _mapper;
-        public FoodController(ConvertExcelDbContext db, IMapper mapper)
+        public FoodController( IMapper mapper, ApplicationDbContext db)
         {
             _db = db;
             _mapper = mapper;
+        }
+        [HttpGet]
+        public IActionResult getALL()
+        {
+            var r = _db.Ingredient.ToList();
+            return Ok(r);
         }
         [HttpGet("{Name:alpha}")]
         public IActionResult GetSearchByName(string Name)

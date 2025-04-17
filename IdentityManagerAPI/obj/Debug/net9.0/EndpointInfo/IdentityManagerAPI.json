@@ -67,53 +67,17 @@
         }
       }
     },
-    "/api/Food/{Name}": {
-      "get": {
-        "tags": [
-          "Food"
-        ],
-        "parameters": [
-          {
-            "name": "Name",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "pattern": "^[A-Za-z]*$",
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Food/SearchByIngredient/{ingredientName}": {
-      "get": {
-        "tags": [
-          "Food"
-        ],
-        "parameters": [
-          {
-            "name": "ingredientName",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "pattern": "^[A-Za-z]*$",
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Food": {
+      "get": {
+        "tags": [
+          "Food"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "post": {
         "tags": [
           "Food"
@@ -178,6 +142,52 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/Food/{Name}": {
+      "get": {
+        "tags": [
+          "Food"
+        ],
+        "parameters": [
+          {
+            "name": "Name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "pattern": "^[A-Za-z]*$",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Food/SearchByIngredient/{ingredientName}": {
+      "get": {
+        "tags": [
+          "Food"
+        ],
+        "parameters": [
+          {
+            "name": "ingredientName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "pattern": "^[A-Za-z]*$",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
