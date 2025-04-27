@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.DTOs.Food
+namespace Domain.DTOs.Food
 {
     public class RecipeWithNutritionDTO
     {

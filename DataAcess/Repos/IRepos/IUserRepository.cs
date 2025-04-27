@@ -1,6 +1,6 @@
-﻿using Models.Domain;
-using Models.DTOs.Auth;
-using Models.DTOs.User;
+﻿using Domain.Domain;
+using Domain.DTOs.Auth;
+using Domain.DTOs.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,6 +1,7 @@
 ﻿using DataAcess.Repos.IRepos;
+using Domain.DTOs.Auth;
 using IdentityManager.Services.ControllerService.IControllerService;
-using Models.DTOs.Auth;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

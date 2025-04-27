@@ -1,4 +1,5 @@
-﻿using Models.DTOs.image;
+﻿
+using Domain.DTOs.image;
 using System;
 using System.Collections.Generic;
 using System.Linq;

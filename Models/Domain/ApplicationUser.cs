@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Models.Domain
+namespace Domain.Domain
 {
     public class ApplicationUser : IdentityUser
     {

@@ -20,9 +20,7 @@ C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin
 C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\IdentityManager.Services.dll
 C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\IdentityManager.Services.pdb
 C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\DataAcess.dll
-C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\Models.dll
 C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\DataAcess.pdb
-C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\Models.pdb
 C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.csproj.AssemblyReference.cache
 C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.AssemblyInfoInputs.cache
@@ -34,3 +32,5 @@ C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj
 C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\refint\IdentityManager.Services.dll
 C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\IdentityManager.Services.pdb
 C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\obj\Debug\net9.0\ref\IdentityManager.Services.dll
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\Domain.dll
+C:\Users\mahmo\Source\Repos\Graduation_Project_Free\IdentityManager.Services\bin\Debug\net9.0\Domain.pdb

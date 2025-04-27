@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityManagerAPI", "Ident
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAcess", "DataAcess\DataAcess.csproj", "{27AFB5C8-5876-48D6-B8E1-0BCA2FA09D71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{A89FB4DF-A248-4F18-9E85-4C84EE4752E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Models\Domain.csproj", "{A89FB4DF-A248-4F18-9E85-4C84EE4752E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityManager.Services", "IdentityManager.Services\IdentityManager.Services.csproj", "{5A47FBD8-62E3-4CFB-81F6-6BB7041EFB60}"
 EndProject

@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
-using Models.Domain;
-using Models.DTOs.Food;
+using Domain.Domain;
+using Domain.DTOs.Food;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.DTOs.Mapper
+namespace Domain.DTOs.Mapper
 {
     public class RecipeProfile:Profile
     {

@@ -1,10 +1,9 @@
 ﻿using DataAcess.Repos.IRepos;
+using Domain.DTOs.image;
 using IdentityManager.Services.ControllerService.IControllerService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Models.Domain;
-using Models.DTOs.image;
 using System.Security.Claims;
 
 namespace IdentityManagerAPI.Controllers

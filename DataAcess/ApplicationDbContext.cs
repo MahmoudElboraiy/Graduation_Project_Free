@@ -2,10 +2,10 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Models.Domain;
-using Models.DTOs.Food;
 using System.Reflection.Emit;
-
+using Domain;
+using Domain.Domain;
+using Domain.DTOs.Food;
 namespace DataAcess
 {
     public class ApplicationDbContext : IdentityDbContext

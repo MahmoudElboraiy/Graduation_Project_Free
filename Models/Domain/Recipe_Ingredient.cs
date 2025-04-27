@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Models.Domain
+namespace Domain.Domain
 {
     public partial class Recipe_Ingredient
     {

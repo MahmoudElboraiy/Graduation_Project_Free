@@ -1,7 +1,7 @@
 ﻿using DataAcess.Repos.IRepos;
+using Domain.Domain;
+using Domain.DTOs.image;
 using IdentityManager.Services.ControllerService.IControllerService;
-using Models.Domain;
-using Models.DTOs.image;
 using System;
 using System.Collections.Generic;
 using System.Linq;

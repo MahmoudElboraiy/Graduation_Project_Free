@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using DataAcess;
+using Domain.DTOs.Food;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using Models.Domain;
-using Models.DTOs.Food;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 namespace IdentityManagerAPI.Controllers
 {
@@ -21,9 +21,11 @@ namespace IdentityManagerAPI.Controllers
             _db = db;
             _mapper = mapper;
         }
+        [Authorize]
         [HttpGet]
         public IActionResult getALL()
         {
+            var userId = Guid.Parse(User.FindFirst("Id").Value);
             var r = _db.Ingredient.ToList();
             return Ok(r);
         }
@@ -100,6 +102,32 @@ namespace IdentityManagerAPI.Controllers
 
             List<RecipeWithNutritionDTO> recipeWithNutritionDTOs = _mapper.Map<List<RecipeWithNutritionDTO>>(recipes);
             return Ok(recipeWithNutritionDTOs);
+        }
+
+        [HttpPost("MissingIngredients/{recipeId:int}")]
+        public IActionResult GetMissingIngredients(int recipeId, [FromBody] List<int> availableIngredientIds)
+        {
+            // Fetch the required ingredients for the recipe
+            var requiredIngredients = _db.Recipe_Ingredient
+                .Where(ri => ri.RecipeId == recipeId)
+                .Select(ri => ri.Ingredient_Id)
+                .ToList();
+
+            // Find the missing ingredients
+            var missingIngredients = requiredIngredients
+                .Where(ingredientId => !availableIngredientIds.Contains(ingredientId))
+                .ToList();
+
+            // Fetch the details of the missing ingredients
+            var missingIngredientDetails = _db.Ingredient
+                .Where(ing => missingIngredients.Contains(ing.Ingredient_Id))
+                .Select(ing => new
+                {
+                    ing.Ingredient_Name
+                })
+                .ToList();
+
+            return Ok(missingIngredientDetails);
         }
     }
 }

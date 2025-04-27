@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.DTOs.Auth
+namespace Domain.DTOs.Auth
 {
     public class LoginRequestDTO
     {

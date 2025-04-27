@@ -1,7 +1,7 @@
 ﻿using DataAcess.Repos.IRepos;
+using Domain.Domain;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Models.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;

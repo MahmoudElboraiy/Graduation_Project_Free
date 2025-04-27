@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace Models.Domain
+namespace Domain.Domain
 {
 
     public partial class Nutrition

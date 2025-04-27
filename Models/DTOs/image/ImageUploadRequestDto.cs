@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.DTOs.image
+namespace Domain.DTOs.image
 {
     public class ImageUploadRequestDto
     {

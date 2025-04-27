@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Models.Domain
+namespace Domain.Domain
 {
     public partial class Ingredient
     {
@@ -9,5 +9,6 @@ namespace Models.Domain
 
         public string? Ingredient_Name { get; set; }
         public ICollection<Recipe_Ingredient> Recipe_Ingredient { get; set; }
+        public int Type { get; set};
     }
 }
