@@ -9,6 +9,6 @@ namespace Domain.Domain
 
         public string? Ingredient_Name { get; set; }
         public ICollection<Recipe_Ingredient> Recipe_Ingredient { get; set; }
-        public int Type { get; set};
+        public bool Type { get; set; }
     }
 }

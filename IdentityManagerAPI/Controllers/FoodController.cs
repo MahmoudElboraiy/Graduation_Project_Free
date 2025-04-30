@@ -21,11 +21,11 @@ namespace IdentityManagerAPI.Controllers
             _db = db;
             _mapper = mapper;
         }
-        [Authorize]
+        //[Authorize]
         [HttpGet]
         public IActionResult getALL()
         {
-            var userId = Guid.Parse(User.FindFirst("Id").Value);
+            
             var r = _db.Ingredient.ToList();
             return Ok(r);
         }
@@ -107,20 +107,18 @@ namespace IdentityManagerAPI.Controllers
         [HttpPost("MissingIngredients/{recipeId:int}")]
         public IActionResult GetMissingIngredients(int recipeId, [FromBody] List<int> availableIngredientIds)
         {
-            // Fetch the required ingredients for the recipe
             var requiredIngredients = _db.Recipe_Ingredient
                 .Where(ri => ri.RecipeId == recipeId)
                 .Select(ri => ri.Ingredient_Id)
                 .ToList();
 
-            // Find the missing ingredients
             var missingIngredients = requiredIngredients
                 .Where(ingredientId => !availableIngredientIds.Contains(ingredientId))
                 .ToList();
 
-            // Fetch the details of the missing ingredients
             var missingIngredientDetails = _db.Ingredient
-                .Where(ing => missingIngredients.Contains(ing.Ingredient_Id))
+                .Where(ing => missingIngredients.Contains(ing.Ingredient_Id)
+                         &&!ing.Type)
                 .Select(ing => new
                 {
                     ing.Ingredient_Name

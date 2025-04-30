@@ -11,7 +11,7 @@
         "projectName": "DataAcess",
         "projectPath": "C:\\Users\\mahmo\\Source\\Repos\\Graduation_Project_Free\\DataAcess\\DataAcess.csproj",
         "packagesPath": "C:\\Users\\mahmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mahmo\\source\\repos\\Graduation_Project_Free\\DataAcess\\obj\\",
+        "outputPath": "C:\\Users\\mahmo\\Source\\Repos\\Graduation_Project_Free\\DataAcess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -118,7 +118,7 @@
         "projectName": "IdentityManager.Services",
         "projectPath": "C:\\Users\\mahmo\\Source\\Repos\\Graduation_Project_Free\\IdentityManager.Services\\IdentityManager.Services.csproj",
         "packagesPath": "C:\\Users\\mahmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mahmo\\source\\repos\\Graduation_Project_Free\\IdentityManager.Services\\obj\\",
+        "outputPath": "C:\\Users\\mahmo\\Source\\Repos\\Graduation_Project_Free\\IdentityManager.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -212,7 +212,7 @@
         "projectName": "Domain",
         "projectPath": "C:\\Users\\mahmo\\Source\\Repos\\Graduation_Project_Free\\Models\\Domain.csproj",
         "packagesPath": "C:\\Users\\mahmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mahmo\\source\\repos\\Graduation_Project_Free\\Models\\obj\\",
+        "outputPath": "C:\\Users\\mahmo\\Source\\Repos\\Graduation_Project_Free\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
