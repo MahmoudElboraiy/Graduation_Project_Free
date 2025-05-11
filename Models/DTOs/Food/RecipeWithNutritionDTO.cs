@@ -8,6 +8,7 @@ namespace Domain.DTOs.Food
 {
     public class RecipeWithNutritionDTO
     {
+        public int RecipeId { get; set; }
         public string Recipe_Name { get; set; } = null!;
 
         public string Description { get; set; } = null!;
@@ -27,5 +28,6 @@ namespace Domain.DTOs.Food
         public double Carb_100 { get; set; }
         public List<string> IngredientNames { get; set; } = new List<string>();
         public string Type { get; set; }
+        public DateTime AddedAt { get; set; }
     }
 }

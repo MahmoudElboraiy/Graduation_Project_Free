@@ -13,5 +13,7 @@ namespace Domain.Domain
         // Navigation property
         [ForeignKey("ImageId")]
         public Image Image { get; set; }
+
+        public ICollection<FavoriteRecipe> FavoriteRecipes { get; set; }
     }
 }

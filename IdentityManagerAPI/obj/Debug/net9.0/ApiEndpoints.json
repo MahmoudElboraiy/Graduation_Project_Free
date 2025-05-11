@@ -64,6 +64,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FavoritesController",
+    "Method": "GetFavorites",
+    "RelativePath": "api/Favorites",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FavoritesController",
+    "Method": "AddToFavorites",
+    "RelativePath": "api/Favorites/{recipeId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FavoritesController",
+    "Method": "RemoveFromFavorites",
+    "RelativePath": "api/Favorites/{recipeId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "IdentityManagerAPI.Controllers.FoodController",
     "Method": "getALL",
     "RelativePath": "api/Food",

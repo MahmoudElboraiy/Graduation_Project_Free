@@ -129,6 +129,62 @@
         }
       }
     },
+    "/api/Favorites/{recipeId}": {
+      "post": {
+        "tags": [
+          "Favorites"
+        ],
+        "parameters": [
+          {
+            "name": "recipeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Favorites"
+        ],
+        "parameters": [
+          {
+            "name": "recipeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Favorites": {
+      "get": {
+        "tags": [
+          "Favorites"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Food": {
       "get": {
         "tags": [
@@ -418,6 +474,10 @@
       "RecipeWithNutritionDTO": {
         "type": "object",
         "properties": {
+          "recipeId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "recipe_Name": {
             "type": "string",
             "nullable": true
@@ -464,6 +524,10 @@
           "type": {
             "type": "string",
             "nullable": true
+          },
+          "addedAt": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
