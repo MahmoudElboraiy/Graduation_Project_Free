@@ -154,6 +154,7 @@ if (app.Environment.IsDevelopment())
 // Use the global exception handler
 app.UseExceptionHandler();
 
+app.UseMiddleware<LanguageMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseAuthentication(); 

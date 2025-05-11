@@ -26,6 +26,6 @@ namespace Domain.DTOs.Food
 
         public double Carb_100 { get; set; }
         public List<string> IngredientNames { get; set; } = new List<string>();
-        public string Type { get; set; } = "General";
+        public string Type { get; set; }
     }
 }

@@ -6,9 +6,10 @@ using System.Reflection.Emit;
 using Domain;
 using Domain.Domain;
 using Domain.DTOs.Food;
+using Domain.Interfaces;
 namespace DataAcess
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext, ILanguageDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {

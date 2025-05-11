@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Domain.Domain
 {
@@ -15,6 +16,6 @@ namespace Domain.Domain
 
         public string? Preparation_Method { get; set; }
         public Nutrition Nutrition { get; set; }
-        public ICollection<Recipe_Ingredient> Recipe_Ingredient { get; set; }
+        public ICollection<Recipe_Ingredient> Recipe_Ingredient { get; set; } = new List<Recipe_Ingredient>();
     }
 }

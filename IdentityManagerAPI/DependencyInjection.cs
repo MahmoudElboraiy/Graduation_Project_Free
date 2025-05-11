@@ -11,6 +11,9 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Domain.DTOs.Mapper;
 using Domain.Domain;
+using IdentityManager.Services.Interfaces;
+using Domain.Interfaces;
+using Domain.DTOs.Food;
 
 namespace IdentityManagerAPI
 {
@@ -51,10 +54,12 @@ namespace IdentityManagerAPI
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IUserService, UserService>();
 
-
+            services.AddHttpContextAccessor();
+            services.AddScoped<ILanguageDbContextAccessor, LanguageDbContextAccessor>();
             // Add Repositories
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IImageRepository, ImageRepository>();
+
 
             services
            .AddIdentityCore<ApplicationUser>(o =>
@@ -74,6 +79,29 @@ namespace IdentityManagerAPI
             var connectionString = configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
+            var connectionStringArabic = configuration.GetConnectionString("ExternalConnection");
+            services.AddDbContext<Arabic_ApplicationDbContext>(options => options.UseSqlServer(connectionStringArabic));
+
+            services.AddScoped<ILanguageDbContext>(provider =>
+            {
+                var httpContextAccessor = provider.GetRequiredService<IHttpContextAccessor>();
+                var lang = httpContextAccessor.HttpContext?.Items["Lang"]?.ToString() ?? "en";
+
+                return lang == "ar"
+                    ? provider.GetRequiredService<Arabic_ApplicationDbContext>()
+                    : provider.GetRequiredService<ApplicationDbContext>();
+            });
+
+            services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.Converters.Add(new LocalizedConverter<Recipe>());
+                    options.JsonSerializerOptions.Converters.Add(new LocalizedConverter<Nutrition>());
+                    options.JsonSerializerOptions.Converters.Add(new LocalizedConverter<Ingredient>());
+                    options.JsonSerializerOptions.Converters.Add(new LocalizedConverter<Recipe_Ingredient>());
+                    options.JsonSerializerOptions.Converters.Add(new LocalizedConverter<RecipeWithNutritionDTO>());
+
+                });
 
             services
                 .AddAuthentication(cfg =>
